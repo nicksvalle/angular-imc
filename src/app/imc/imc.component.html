@@ -1,0 +1,28 @@
+
+<div class="text-light text-dark">
+  <br><br>
+  
+  <h1>Calculadora de IMC </h1>
+  
+  <div class="text">
+      <br>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Digite seu peso:</label>
+        <input class="form-control" type="number" [(ngModel)]="peso" placeholder="Seu peso">
+      </div>
+      <br><br>
+      <div class="mb-3" >
+        <label for="exampleFormControlInput1" class="form-label">Digite a sua altura:</label>
+    
+      <input class="form-control" type="number" [(ngModel)]="altura" placeholder="Seu altura">
+    </div>
+      <br><br>
+      <button class="btn btn-outline-dark" (click)="calc()">Calcular</button>
+      <br><br>
+      {{imc}} 
+      <br><br>
+      <div class="display-6 text-danger" >
+      {{resu}}
+      </div>
+</div>
+</div>
